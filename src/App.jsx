@@ -110,7 +110,7 @@ const App = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500 font-black">Sridhar.</span>
             </h1>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed mb-12 px-4">
-              Bridging the gap between business strategy and technical execution. With end-to-end expertise across SAP Sales Cloud, Service Cloud, and Enterprise Service Management, I turn complex requirements into seamless implementations. Based in Hamburg and ready to elevate your SAP landscape across Germany.
+              Bridging the gap between business strategy and technical execution. With end-to-end expertise across SAP Sales Cloud, Service Cloud, and Enterprise Service Management, I turn complex requirements into seamless implementations.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-bold rounded-full hover:shadow-2xl hover:shadow-cyan-400/20 transition-all flex items-center gap-2">
