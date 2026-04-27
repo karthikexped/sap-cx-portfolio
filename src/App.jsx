@@ -15,7 +15,8 @@ const Section = ({ children, id, className = "" }) => (
     className={`py-24 px-6 max-w-6xl mx-auto ${className}`}
   >
     {children}
-  </motion.section>Section;
+  </motion.section>
+);
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -78,8 +79,8 @@ const App = () => {
             KS<span className="text-cyan-400">.</span>
           </motion.span>
           <div className="flex items-center gap-6">
-            <a href="#journey" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest">Journey</a>
-            <a href="#skills" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest">Expertise</a>
+            <a href="#journey" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest text-zinc-600 dark:text-zinc-400">Journey</a>
+            <a href="#skills" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest text-zinc-600 dark:text-zinc-400">Expertise</a>
             <button 
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
@@ -106,9 +107,9 @@ const App = () => {
             </span>
             <h1 className="text-6xl md:text-9xl font-black mb-8 tracking-tighter leading-[0.9]">
               Karthik <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500">Sridhar.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500 font-black">Sridhar.</span>
             </h1>
-            <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed mb-12 px-4">
+            <p className="max-w-3xl mx-auto text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed mb-12 px-4">
               Bridging the gap between business strategy and technical execution. With end-to-end expertise across SAP Sales Cloud, Service Cloud, and Enterprise Service Management, I turn complex requirements into seamless implementations. Based in Hamburg and ready to elevate your SAP landscape across Germany.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
@@ -140,7 +141,7 @@ const App = () => {
                   <h4 className="text-sm font-mono text-cyan-400 mb-2">{exp.period}</h4>
                   <h5 className="text-3xl font-bold">{exp.company}</h5>
                 </div>
-                <div className="mt-4 md:mt-0 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-sm font-bold uppercase tracking-widest">
+                <div className="mt-4 md:mt-0 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-sm font-bold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
                   {exp.role}
                 </div>
               </div>
@@ -167,7 +168,7 @@ const App = () => {
         </div>
 
         <div className="grid md:grid-cols-12 gap-6">
-          <div className="md:col-span-7 bento-card bg-zinc-900 text-zinc-100 dark:bg-white dark:text-zinc-900 border-none">
+          <div className="md:col-span-7 bento-card bg-zinc-900 text-zinc-100 dark:bg-white dark:text-zinc-900 border-none shadow-2xl">
             <Zap className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-3xl font-black mb-4">SAP CX Core</h4>
             <p className="opacity-70 text-lg mb-8">
@@ -203,7 +204,7 @@ const App = () => {
           <div className="md:col-span-5 bento-card bg-cyan-400/5 border-cyan-400/20">
             <Cloud className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-2xl font-bold mb-4">Strategic BPM</h4>
-            <p className="text-zinc-500 text-sm leading-relaxed">
+            <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
               Expertise in Business Process Management—breaking down complex, multi-layered problems into simple, actionable solutions.
             </p>
           </div>
@@ -211,12 +212,12 @@ const App = () => {
           <div className="md:col-span-7 bento-card">
             <Briefcase className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-2xl font-bold mb-4">Stakeholder Management</h4>
-            <p className="text-zinc-500 text-sm leading-relaxed mb-6">
+            <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-6">
               Adept at managing global stakeholders, bridging the gap between high-level business vision and granular technical execution.
             </p>
             <div className="flex gap-2">
-              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase">Communication</span>
-              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase">Leadership</span>
+              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">Communication</span>
+              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">Leadership</span>
             </div>
           </div>
         </div>
@@ -235,7 +236,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 pt-8">
             <a 
               href="tel:+4917623685301" 
-              className="w-full md:w-auto px-12 py-5 bg-white/5 border border-white/10 text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3"
+              className="w-full md:w-auto px-12 py-5 bg-white/5 border border-white/10 text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3 dark:bg-zinc-900/50"
             >
               <Phone size={22} />
               +49 176 23685301
@@ -263,10 +264,10 @@ const App = () => {
       {/* Footer */}
       <footer className="py-12 border-t border-zinc-200 dark:border-zinc-800 text-center">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-sm font-medium opacity-40 uppercase tracking-widest">© 2026 Karthik Sridhar</p>
+          <p className="text-sm font-medium opacity-40 uppercase tracking-widest text-zinc-600 dark:text-zinc-400">© 2026 Karthik Sridhar</p>
           <div className="flex gap-8 opacity-40">
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase">SAP CX Certified</span>
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Digital Transformation</span>
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-600 dark:text-zinc-400">SAP CX Certified</span>
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-600 dark:text-zinc-400">Digital Transformation</span>
           </div>
         </div>
       </footer>
