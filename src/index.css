@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  @reference "tailwindcss";
+  body {
+    @apply transition-colors duration-500 antialiased;
+    font-family: var(--font-jakarta);
+  }
+}
+
+.glass {
+  backdrop-filter: blur(24px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background-color: rgba(24, 24, 27, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neon-border {
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.neon-border:hover {
+  border-color: rgba(34, 211, 238, 0.6);
+}
+
+.bento-card {
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+
+.bento-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(34, 211, 238, 0.1);
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: inherit;
+}
