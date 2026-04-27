@@ -68,7 +68,7 @@ const App = () => {
   ];
 
   return (
-    <div className="min-h-screen transition-colors duration-700 bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 overflow-x-hidden">
+    <div className="min-h-screen transition-colors duration-700 overflow-x-hidden">
       {/* Scroll Progress Bar */}
       <motion.div className="fixed top-0 left-0 right-0 h-1 bg-cyan-400 z-[100] origin-left" style={{ scaleX }} />
 
@@ -79,8 +79,8 @@ const App = () => {
             KS<span className="text-cyan-400">.</span>
           </motion.span>
           <div className="flex items-center gap-6">
-            <a href="#journey" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest text-zinc-600 dark:text-zinc-400">Journey</a>
-            <a href="#skills" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest text-zinc-600 dark:text-zinc-400">Expertise</a>
+            <a href="#journey" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest opacity-70 hover:opacity-100">Journey</a>
+            <a href="#skills" className="hidden md:block text-sm font-semibold hover:text-cyan-400 transition-colors uppercase tracking-widest opacity-70 hover:opacity-100">Expertise</a>
             <button 
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
@@ -107,13 +107,13 @@ const App = () => {
             </span>
             <h1 className="text-6xl md:text-9xl font-black mb-8 tracking-tighter leading-[0.9]">
               Karthik <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500 font-black">Sridhar.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-400 dark:from-white dark:via-zinc-300 dark:to-zinc-500 font-black">Sridhar.</span>
             </h1>
-            <p className="max-w-3xl mx-auto text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed mb-12 px-4">
+            <p className="max-w-3xl mx-auto text-lg md:text-xl opacity-60 font-medium leading-relaxed mb-12 px-4">
               Bridging the gap between business strategy and technical execution. With end-to-end expertise across SAP Sales Cloud, Service Cloud, and Enterprise Service Management, I turn complex requirements into seamless implementations.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-bold rounded-full hover:shadow-2xl hover:shadow-cyan-400/20 transition-all flex items-center gap-2">
+              <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-white text-white dark:text-black font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2">
                 Start a Conversation <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -141,11 +141,11 @@ const App = () => {
                   <h4 className="text-sm font-mono text-cyan-400 mb-2">{exp.period}</h4>
                   <h5 className="text-3xl font-bold">{exp.company}</h5>
                 </div>
-                <div className="mt-4 md:mt-0 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-sm font-bold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+                <div className="mt-4 md:mt-0 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-sm font-bold uppercase tracking-widest opacity-70">
                   {exp.role}
                 </div>
               </div>
-              <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8 max-w-3xl">
+              <p className="text-lg opacity-80 leading-relaxed mb-8 max-w-3xl">
                 {exp.description}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -168,18 +168,18 @@ const App = () => {
         </div>
 
         <div className="grid md:grid-cols-12 gap-6">
-          <div className="md:col-span-7 bento-card bg-zinc-900 text-zinc-100 dark:bg-white dark:text-zinc-900 border-none shadow-2xl">
+          <div className="md:col-span-7 bento-card bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 border-none shadow-2xl">
             <Zap className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-3xl font-black mb-4">SAP CX Core</h4>
             <p className="opacity-70 text-lg mb-8">
-              Full-lifecycle in Sales and Service Cloud implementation with a focus on mid-tier and large-tier industries complemented by a deep proficiency in <span className="text-cyan-400 dark:text-cyan-600 font-bold">Strategic BPM</span> and excellent <span className="text-cyan-400 dark:text-cyan-600 font-bold">Stakeholder Management</span>.
+              Full-lifecycle in Sales and Service Cloud implementation with a focus on mid-tier and large-tier industries complemented by a deep proficiency in <span className="text-cyan-400 font-bold">Strategic BPM</span> and excellent <span className="text-cyan-400 font-bold">Stakeholder Management</span>.
             </p>
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100/10 border border-white/10">
+              <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100 border border-white/10 dark:border-zinc-200">
                 <Globe size={20} className="mb-2 text-cyan-400" />
                 <span className="text-xs font-bold uppercase tracking-wider">SAP Integration</span>
               </div>
-              <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100/10 border border-white/10">
+              <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100 border border-white/10 dark:border-zinc-200">
                 <Cpu size={20} className="mb-2 text-cyan-400" />
                 <span className="text-xs font-bold uppercase tracking-wider">SAP Analytics</span>
               </div>
@@ -194,7 +194,7 @@ const App = () => {
                 {certifications.map((c, i) => (
                   <div key={i} className="flex items-center gap-3 group">
                     <CheckCircle2 size={18} className="text-cyan-400 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm font-medium">{c}</span>
+                    <span className="text-sm font-medium opacity-80">{c}</span>
                   </div>
                 ))}
               </div>
@@ -204,7 +204,7 @@ const App = () => {
           <div className="md:col-span-5 bento-card bg-cyan-400/5 border-cyan-400/20">
             <Cloud className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-2xl font-bold mb-4">Strategic BPM</h4>
-            <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+            <p className="opacity-60 text-sm leading-relaxed">
               Expertise in Business Process Management—breaking down complex, multi-layered problems into simple, actionable solutions.
             </p>
           </div>
@@ -212,12 +212,12 @@ const App = () => {
           <div className="md:col-span-7 bento-card">
             <Briefcase className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-2xl font-bold mb-4">Stakeholder Management</h4>
-            <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+            <p className="opacity-60 text-sm leading-relaxed mb-6">
               Adept at managing global stakeholders, bridging the gap between high-level business vision and granular technical execution.
             </p>
             <div className="flex gap-2">
-              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">Communication</span>
-              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">Leadership</span>
+              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase opacity-60">Communication</span>
+              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase opacity-60">Leadership</span>
             </div>
           </div>
         </div>
@@ -236,7 +236,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 pt-8">
             <a 
               href="tel:+4917623685301" 
-              className="w-full md:w-auto px-12 py-5 bg-white/5 border border-white/10 text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3 dark:bg-zinc-900/50"
+              className="w-full md:w-auto px-12 py-5 bg-zinc-900/5 dark:bg-white/5 border border-zinc-900/10 dark:border-white/10 text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3"
             >
               <Phone size={22} />
               +49 176 23685301
@@ -262,12 +262,12 @@ const App = () => {
       </Section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-zinc-200 dark:border-zinc-800 text-center">
+      <footer className="py-12 border-t border-zinc-200 dark:border-zinc-800 text-center opacity-40">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-sm font-medium opacity-40 uppercase tracking-widest text-zinc-600 dark:text-zinc-400">© 2026 Karthik Sridhar</p>
-          <div className="flex gap-8 opacity-40">
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-600 dark:text-zinc-400">SAP CX Certified</span>
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-600 dark:text-zinc-400">Digital Transformation</span>
+          <p className="text-sm font-medium uppercase tracking-widest">© 2026 Karthik Sridhar</p>
+          <div className="flex gap-8">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase">SAP CX Certified</span>
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Digital Transformation</span>
           </div>
         </div>
       </footer>
