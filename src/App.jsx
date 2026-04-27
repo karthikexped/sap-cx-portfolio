@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
 import { 
   Sun, Moon, Briefcase, Award, Mail, ExternalLink, 
-  CheckCircle2, Cloud, Zap, Globe, Cpu, ArrowRight, Phone
+  CheckCircle2, Cloud, Zap, Globe, Cpu, ArrowRight, Phone, ArrowUp
 } from 'lucide-react';
 
 const Section = ({ children, id, className = "" }) => (
@@ -20,6 +20,7 @@ const Section = ({ children, id, className = "" }) => (
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -34,6 +35,18 @@ const App = () => {
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const experience = [
     {
@@ -271,6 +284,22 @@ const App = () => {
           </div>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      <AnimatePresence>
+        {showScrollTop && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: 20 }}
+            onClick={scrollToTop}
+            className="fixed bottom-10 right-10 z-[100] p-4 glass rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-transform text-cyan-400"
+            aria-label="Scroll to Top"
+          >
+            <ArrowUp size={24} />
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
