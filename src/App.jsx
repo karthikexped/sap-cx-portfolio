@@ -15,8 +15,7 @@ const Section = ({ children, id, className = "" }) => (
     className={`py-24 px-6 max-w-6xl mx-auto ${className}`}
   >
     {children}
-  </motion.section>
-);
+  </motion.section>Section;
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -39,32 +38,31 @@ const App = () => {
     {
       company: "Blueprint Technologies",
       role: "SAP CX Senior Consultant",
-      period: "2025 - PRESENT",
-      description: "Leading strategic V1→V2 transitions for enterprise clients. Architecting cross-modular solutions in Sales and Service Cloud with a focus on Enterprise Service Management.",
-      skills: ["V1→V2 Transition", "Architecture", "Pre-sales"]
+      period: "2023 - PRESENT",
+      description: "Leading strategic V1 → V2 transitions. Architecting cross-module solutions with SAP Sales Cloud, Service Cloud & Enterprise Service Management.",
+      skills: ["BPM", "Stakeholder Management", "Solution Architecture"]
     },
     {
       company: "Colgate-Palmolive",
       role: "SAP CX Inhouse Consultant",
       period: "2019 - 2022",
-      description: "Key leader in homogenizing splintered CRM systems and multiple service providers into a unified 'OneCRM' application using SAP C4C. Directed global rollouts across 12 countries, significantly enhancing operational synergy and data integrity.",
-      skills: ["OneCRM Consolidation", "System Homogenization", "Global Rollout"]
+      description: "Key contributor in homogenizing splintered CRM systems and multiple service providers into a unified 'OneCRM' global application powered by SAP C4C. Led rollouts across 12 countries to achieve a singular, high-performance customer vision.",
+      skills: ["System Homogenization", "Global Strategy", "End-to-End Implementation"]
     },
     {
       company: "Neeyamo",
       role: "Business Analyst",
       period: "2017 - 2019",
-      description: "Bridged the gap between business needs and technical execution for Fortune 500 telecommunications giants using SAP Service Cloud.",
+      description: "Bridged the gap between business needs and technical execution for Fortune 500 telecommunications giants using SAP Service Cloud and Employee Central Service Centre.",
       skills: ["Requirements", "Mapping", "ECSC"]
     }
   ];
 
   const certifications = [
-    "SAP Sales Cloud V2",
-    "SAP Analytics Cloud Certified",
-    "SAP Integration Developer Certified",
-    "Sales Cloud 2111",
-    "Service Cloud 2111",
+    "SAP Sales Cloud Version 2",
+    "SAP Service Cloud 2111",
+    "SAP Integration Developer",
+    "SAP Analytics Cloud",
     "SAP Business Data Cloud"
   ];
 
@@ -111,9 +109,7 @@ const App = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500">Sridhar.</span>
             </h1>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed mb-12 px-4">
-              I architect seamless digital transformations. Bridging the gap between 
-              <span className="text-zinc-900 dark:text-zinc-100 italic"> complex business strategy </span> 
-              and powerful SAP cloud experiences—driven by deep expertise in CX, Analytics, and Integration.
+              Bridging the gap between business strategy and technical execution. With end-to-end expertise across SAP Sales Cloud, Service Cloud, and Enterprise Service Management, I turn complex requirements into seamless implementations. Based in Hamburg and ready to elevate your SAP landscape across Germany.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-bold rounded-full hover:shadow-2xl hover:shadow-cyan-400/20 transition-all flex items-center gap-2">
@@ -175,7 +171,7 @@ const App = () => {
             <Zap className="text-cyan-400 mb-8" size={40} />
             <h4 className="text-3xl font-black mb-4">SAP CX Core</h4>
             <p className="opacity-70 text-lg mb-8">
-              Full-lifecycle expertise in Sales and Service Cloud implementation, now complemented by deep proficiency in <span className="text-cyan-400 dark:text-cyan-600 font-bold">Integration</span> and <span className="text-cyan-400 dark:text-cyan-600 font-bold">Analytics</span>.
+              Full-lifecycle in Sales and Service Cloud implementation with a focus on mid-tier and large-tier industries complemented by a deep proficiency in <span className="text-cyan-400 dark:text-cyan-600 font-bold">Strategic BPM</span> and excellent <span className="text-cyan-400 dark:text-cyan-600 font-bold">Stakeholder Management</span>.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100/10 border border-white/10">
@@ -238,11 +234,11 @@ const App = () => {
           </h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 pt-8">
             <a 
-              href="tel:+4917923685301" 
+              href="tel:+4917623685301" 
               className="w-full md:w-auto px-12 py-5 bg-white/5 border border-white/10 text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3"
             >
               <Phone size={22} />
-              +49 179 23685301
+              +49 176 23685301
             </a>
             <a 
               href="mailto:karthikexped@gmail.com" 
