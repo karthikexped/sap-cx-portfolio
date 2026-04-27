@@ -113,7 +113,7 @@ const App = () => {
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed mb-12 px-4">
               I architect seamless digital transformations. Bridging the gap between 
               <span className="text-zinc-900 dark:text-zinc-100 italic"> complex business strategy </span> 
-              and powerful SAP cloud experiences.
+              and powerful SAP cloud experiences—driven by deep expertise in CX, Analytics, and Integration.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-bold rounded-full hover:shadow-2xl hover:shadow-cyan-400/20 transition-all flex items-center gap-2">
