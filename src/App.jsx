@@ -277,14 +277,6 @@ const App = () => {
               <Globe size={22} />
               LinkedIn Profile
             </a>
-            <a 
-              href="/assets/secure/Karthik_Sridhar_SAP_CX_V2_Consultant.pdf" 
-              download 
-              className="w-full md:w-auto px-12 py-5 glass text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3"
-            >
-              <Download size={22} />
-              Download CV
-            </a>
           </div>
         </motion.div>
       </Section>
