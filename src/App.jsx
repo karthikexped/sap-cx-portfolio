@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
 import { 
   Sun, Moon, Briefcase, Award, Mail, ExternalLink, 
-  CheckCircle2, Cloud, Zap, Globe, Cpu, ArrowRight, Phone, ArrowUp
+  CheckCircle2, Cloud, Zap, Globe, Cpu, ArrowRight, Phone, ArrowUp, Download
 } from 'lucide-react';
 
 const Section = ({ children, id, className = "" }) => (
@@ -128,6 +128,13 @@ const App = () => {
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-white text-white dark:text-black font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2">
                 Start a Conversation <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a 
+                href="/assets/secure/Karthik_Sridhar_SAP_CX_V2_Consultant.pdf" 
+                download 
+                className="group px-10 py-4 glass text-zinc-900 dark:text-zinc-100 font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2"
+              >
+                <Download size={18} /> Download CV
               </a>
             </div>
           </motion.div>
@@ -269,6 +276,14 @@ const App = () => {
             >
               <Globe size={22} />
               LinkedIn Profile
+            </a>
+            <a 
+              href="/assets/secure/Karthik_Sridhar_SAP_CX_V2_Consultant.pdf" 
+              download 
+              className="w-full md:w-auto px-12 py-5 glass text-cyan-400 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3"
+            >
+              <Download size={22} />
+              Download CV
             </a>
           </div>
         </motion.div>
