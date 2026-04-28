@@ -97,6 +97,7 @@ const App = () => {
             <button 
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
+              aria-label="Toggle Dark Mode"
             >
               {darkMode ? <Sun size={20} className="text-cyan-400" /> : <Moon size={20} />}
             </button>
@@ -197,11 +198,11 @@ const App = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100 border border-white/10 dark:border-zinc-200">
                 <Globe size={20} className="mb-2 text-cyan-400" />
-                <span className="text-xs font-bold uppercase tracking-wider">SAP Integration</span>
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-wider">Greenfield & Brownfield Implementations</span>
               </div>
               <div className="p-4 rounded-2xl bg-white/10 dark:bg-zinc-100 border border-white/10 dark:border-zinc-200">
                 <Cpu size={20} className="mb-2 text-cyan-400" />
-                <span className="text-xs font-bold uppercase tracking-wider">SAP Analytics</span>
+                <span className="text-[10px] md:text-xs font-bold uppercase tracking-wider">Continuous Support</span>
               </div>
             </div>
           </div>
