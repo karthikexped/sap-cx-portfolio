@@ -121,19 +121,19 @@ const App = () => {
             </span>
             <h1 className="text-6xl md:text-9xl font-black mb-8 tracking-tighter leading-[0.9]">
               Karthik <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-400 dark:from-white dark:via-zinc-300 dark:to-zinc-500 font-black">Sridhar.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-950 via-zinc-800 to-zinc-700 dark:from-white dark:via-zinc-300 dark:to-zinc-500 font-black">Sridhar.</span>
             </h1>
             <p className="max-w-3xl mx-auto text-lg md:text-xl opacity-60 font-medium leading-relaxed mb-12 px-4">
               Bridging the gap between business strategy and technical execution. With end-to-end expertise across SAP Sales Cloud, Service Cloud, and Enterprise Service Management, I turn complex requirements into seamless implementations.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <a href="#contact" className="group px-10 py-4 bg-zinc-900 dark:bg-white text-white dark:text-black font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2">
+              <a href="#contact" className="group px-10 py-4 bg-zinc-950 dark:bg-white text-white dark:text-black font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2">
                 Start a Conversation <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
                 href="/assets/secure/Karthik_Sridhar_SAP_CX_V2_Consultant.pdf" 
                 download 
-                className="group px-10 py-4 glass text-zinc-900 dark:text-zinc-100 font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2"
+                className="group px-10 py-4 bg-white/80 dark:bg-zinc-900/50 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 text-zinc-950 dark:text-zinc-100 font-bold rounded-full hover:scale-105 transition-all flex items-center gap-2 shadow-sm"
               >
                 <Download size={18} /> Download CV
               </a>
@@ -171,7 +171,7 @@ const App = () => {
               </p>
               <div className="flex flex-wrap gap-2">
                 {exp.skills.map((s, i) => (
-                  <span key={i} className="px-4 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-bold tracking-wider uppercase border border-zinc-200 dark:border-zinc-700">
+                  <span key={i} className="px-4 py-1.5 rounded-full bg-cyan-50/50 dark:bg-zinc-800 text-xs font-bold tracking-wider uppercase border border-cyan-100 dark:border-zinc-700 text-cyan-800 dark:text-zinc-300">
                     {s}
                   </span>
                 ))}
@@ -237,8 +237,8 @@ const App = () => {
               Adept at managing global stakeholders, bridging the gap between high-level business vision and granular technical execution.
             </p>
             <div className="flex gap-2">
-              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase opacity-60">Communication</span>
-              <span className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase opacity-60">Leadership</span>
+              <span className="px-3 py-1 rounded bg-cyan-50/50 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase text-cyan-800 dark:text-zinc-400 border border-cyan-100 dark:border-zinc-700">Communication</span>
+              <span className="px-3 py-1 rounded bg-cyan-50/50 dark:bg-zinc-800 text-[10px] font-bold tracking-widest uppercase text-cyan-800 dark:text-zinc-400 border border-cyan-100 dark:border-zinc-700">Leadership</span>
             </div>
           </div>
         </div>
@@ -273,7 +273,7 @@ const App = () => {
               href="https://www.linkedin.com/in/karthik-sridhar-66408a187/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full md:w-auto px-12 py-5 glass font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3"
+              className="w-full md:w-auto px-12 py-5 bg-white/80 dark:bg-zinc-900/50 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 text-zinc-950 dark:text-zinc-100 font-black rounded-full hover:scale-105 transition-all flex items-center justify-center gap-3 shadow-sm"
             >
               <Globe size={22} />
               LinkedIn Profile
